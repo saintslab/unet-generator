@@ -11,6 +11,7 @@ $$\textrm{U-net} = \\{\textrm{kernel\\_size}^{d + 1}\ |\ d \in \textrm{depth}\\}
 The reason for $d+1$ instead of $d$ is due to the middle connecting layer, which is also present in the original U-Net paper.
 This space spans 360 different topologies, but it is easy to expand it to more.
 
+The generated ONNX models can easily be visualized using [Netron](https://netron.app).
 ## Installation
 Requires Python 3.11. Only tested on Fedora Linux, but should work on other platforms as well.
 
