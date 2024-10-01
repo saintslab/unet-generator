@@ -2,15 +2,12 @@
 
 This repository contains a script to enumerate/sample U-Net topologies and ONNX models from the space defined as so:
 
-$$
-    \textrm{depth} = \{1,2,3,4\}
-$$
-$$
-    \textrm{kernel\_size} = \{1,3,5\}
-$$
-$$
-    \textrm{U-net} = \{\textrm{kernel\_size}^{d + 1}\ |\ d \in \textrm{depth}\}
-$$
+$$\textrm{depth} = \\{ 1,2,3,4 \\}$$
+
+$$\textrm{kernel\\_size} = \\{1,3,5\\}$$
+
+$$\textrm{U-net} = \\{\textrm{kernel\\_size}^{d + 1}\ |\ d \in \textrm{depth}\\}$$
+
 The reason for $d+1$ instead of $d$ is due to the middle connecting layer, which is also present in the original U-Net paper.
 This space spans 360 different topologies, but it is easy to expand it to more.
 
